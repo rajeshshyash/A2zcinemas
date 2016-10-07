@@ -26,7 +26,7 @@ public class IndexController {
 
 	@RequestMapping(value = "/actorProfile", method = RequestMethod.GET)
 	public String getActorProfile() {
-		System.out.println("actorProfile call Correct");
+		//System.out.println("actorProfile call Correct");
 		return "actorProfile";
 	}
 

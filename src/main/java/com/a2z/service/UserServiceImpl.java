@@ -74,7 +74,7 @@ public class UserServiceImpl implements UserService {
 		String isValid;
 		if(userName.equalsIgnoreCase(user.getUserName()) && password.equalsIgnoreCase(decodedPassword)){
 			isValid = "true";
-			System.out.println("yes");
+			System.out.println("user match");
 		}else{
 			isValid = "false";
 			System.out.println("no");

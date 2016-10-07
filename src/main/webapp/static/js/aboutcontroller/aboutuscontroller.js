@@ -1,15 +1,20 @@
 'use strict';
-angular.module('profileApp').controller('AboutusController',['$scope','$window','$localStorage', function($scope,$window,$localStorage) {
-		
-					$scope.aboutus = $window.localStorage.getItem('sessionMenuId');
-					$scope.loginAsId = $window.localStorage.getItem('loginAsId');
-					
-					 //alert($window.localStorage.getItem('sessionMenuId'));
-                     //alert($window.localStorage.getItem('loginAsId'));
-                 
+angular.module('profileApp').controller(
+		'AboutusController',
+		[
+				'$scope',
+				'$window',
+				'$localStorage',
+				'$http',
+				function($scope, $window, $localStorage,$http) {
 
-                 $scope.sessionmenuId= function(menuId)
-					{
-						$window.localStorage.setItem('sessionMenuId', 0);	
-					}                 
+					$scope.aboutus = $window.localStorage
+							.getItem('sessionMenuId');
+					$scope.loginAsId = $window.localStorage
+							.getItem('loginAsId');
+					$scope.logout = function() {
+						$window.localStorage.setItem('sessionMenuId', 0);
+						$window.location.href = 'logout';
+					}
+					
 				} ]);

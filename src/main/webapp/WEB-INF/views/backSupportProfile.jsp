@@ -97,9 +97,9 @@
 								</button>
 								&nbsp;&nbsp;
 								<button type="submit" class="btn btn-success mt-lg"
-									ng-click=sessionmenuId( '0') title="Logout">
-									<a href="${pageContext.request.contextPath}/logout"> Logout</a>
-								</button>
+										ng-click="logout()" title="Logout">
+									      <a href="javascript:()"> Logout</a> 
+									    </button>
 							</div>
 						</li>
 					</ul>

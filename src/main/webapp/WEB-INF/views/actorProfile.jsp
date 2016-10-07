@@ -91,8 +91,8 @@
 								</button>
 								&nbsp;&nbsp;
 								<button type="submit" class="btn btn-success mt-lg"
-									ng-click=sessionmenuId( '0') title="Logout">
-									<a href="${pageContext.request.contextPath}/logout"> Logout</a>
+									ng-click="logout()" title="Logout">
+								   <a href="javascript:()"> Logout</a> 
 								</button>
 							</div>
 						</li>
@@ -124,13 +124,13 @@
 										<div class="form-group has-feedback">
 											<label for="" class="text-muted col-lg-4">Father
 												Name</label> <input id="fatherName" name="fatherName"
-												class="form-control" placeholder="Father Name"
+												class="form-control-text col-2" placeholder="Father Name"
 												ng-model="ctrl.profile.fatherName" ng-minlength="3" />
 										</div>
 
 										<div class="form-group has-feedback">
-											<label for="" class="text-muted col-lg-4">Gender</label> <label
-												for="" class="text-muted">&nbsp;</label> <label
+											<label for="" class="text-muted col-lg-4">Gender</label> 
+											 <label
 												class="radio-inline c-radio"> <input type="radio"
 												checked="checked" value="Male"
 												ng-model="ctrl.profile.gender">Male
@@ -143,25 +143,25 @@
 
 										<div class="form-group has-feedback">
 											<label for="" class="text-muted col-lg-4">Date of
-												Birth</label> <input id="dob" name="dob" class="form-control"
+												Birth</label> <input id="dob" name="dob" class="form-control-text col-2"
 												placeholder="YYYY-MM-DD" ng-model="ctrl.profile.dob" />
 										</div>
 
 										<div class="form-group has-feedback">
 											<label for="" class="text-muted col-lg-4">Age</label> <input
-												id="age" name="age" class="form-control" placeholder="Age"
+												id="age" name="age" class="form-control-text col-2" placeholder="Age"
 												ng-model="ctrl.profile.age" />
 										</div>
 
 										<div class="form-group has-feedback">
 											<label for="" class="text-muted col-lg-4">Mobile</span></label> <input
-												id="mobile" name="mobile" class="form-control"
+												id="mobile" name="mobile" class="form-control-text col-2"
 												placeholder="Mobile" ng-model="ctrl.profile.mobile" />
 										</div>
 
 										<div class="form-group has-feedback">
 											<label for="" class="text-muted col-lg-4">Email</span></label> <input
-												id="email" name="email" class="form-control"
+												id="email" name="email" class="form-control-text col-2"
 												placeholder="E-mail" ng-model="ctrl.profile.email" />
 										</div>
 
@@ -169,7 +169,7 @@
 										<div class="form-group has-feedback">
 											<label for="" class="text-muted col-lg-4">Whatsapp
 												No</label> <input id="whatsupNum" name="whatsupNum"
-												class="form-control" placeholder="Whatsapp No"
+												class="form-control-text col-2" placeholder="Whatsapp No"
 												ng-model="ctrl.profile.whatsupNo" />
 										</div>
 
@@ -178,7 +178,7 @@
 										<div class="form-group has-feedback">
 											<label for="" class="text-muted col-lg-4">Landline
 												No</label> <input id="landlineNum" name="landlineNum"
-												class="form-control" placeholder="Landline No"
+												class="form-control-text col-2" placeholder="Landline No"
 												ng-model="ctrl.profile.landlineNo" />
 										</div>
 
@@ -187,7 +187,7 @@
 										<div class="form-group has-feedback">
 											<label for="" class="text-muted col-lg-4">Education
 												/ Qualification</label> <input id="education" name="education"
-												class="form-control" placeholder="Education / Qualification"
+												class="form-control-text col-2" placeholder="Education / Qualification"
 												ng-model="ctrl.profile.eduQualification" />
 										</div>
 
@@ -195,7 +195,7 @@
 										<div class="form-group has-feedback">
 											<label for="" class="text-muted col-lg-4">Course
 												Done related to film/Drama/Modeling</label> <input id="course"
-												name="course" class="form-control"
+												name="course" class="form-control-text col-2"
 												placeholder="Course Done related to film/Drama/Modeling"
 												ng-model="ctrl.profile.courseRelatedProfession" />
 										</div>

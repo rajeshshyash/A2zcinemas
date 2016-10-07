@@ -39,7 +39,7 @@ public class UserDaoImpl extends AbstractDao<Integer, User> implements UserDao {
 		List<?> userdata = null;
 		
 		String query = " SELECT u.user_id,u.profession,u.first_name,u.last_name, "+ 
-				" pd.language,pd1.previous_work_indusry,pd1.name_worked_with_director, "+
+				" pd.language,pd1.previous_work_indusry,pd1.film_industry_intrested, "+
 				" a.pm_district,a.pm_state "+
 				" FROM users u "+
 				" LEFT OUTER JOIN profile_details pd ON u.user_id = pd.user_id "+

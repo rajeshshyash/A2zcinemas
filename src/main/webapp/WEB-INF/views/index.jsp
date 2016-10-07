@@ -96,29 +96,34 @@
 							<div class="text-center"
 								ng-controller="AboutusController as ctrl">
 								<div ng-if="aboutus == 1">
-
 									<span ng-if="loginAsId ==1">
 										<button type="submit" class="btn btn-success mt-lg"
 											title="Profile">
 											<a href="${pageContext.request.contextPath}/actorProfile">Profile</a>
 										</button>
-									</span> <span ng-if="loginAsId == 2">
+									</span> 
+									<span ng-if="loginAsId == 2">
 										<button type="submit" class="btn btn-success mt-lg"
 											title="Profile">
-											<a
-												href="${pageContext.request.contextPath}/backSupportProfile">Profile</a>
+											<a href="${pageContext.request.contextPath}/backSupportProfile">Profile</a>
 										</button>
-									</span> <span ng-if="loginAsId == 3">
+									</span> 
+									<span ng-if="loginAsId == 3">
 										<button type="submit" class="btn btn-success mt-lg"
 											title="Profile">
 											<a href="${pageContext.request.contextPath}/agencyProfile">Profile</a>
 										</button>
 									</span> &nbsp;&nbsp;
-									<button type="submit" class="btn btn-success mt-lg"
-										ng-click=sessionmenuId('0') title="Logout">
-										<a href="${pageContext.request.contextPath}/logout">
-											Logout</a>
-									</button>
+									
+									
+									  <button type="submit" class="btn btn-success mt-lg"
+											title="Profile">
+											<a href="${pageContext.request.contextPath}/agencyProfile">Logout</a>
+										</button>
+										<button type="submit" class="btn btn-success mt-lg"
+										ng-click="logout()" title="Logout">
+									      <a href="javascript:()"> Logout</a> 
+									    </button>
 
 								</div>
 								<div ng-if="aboutus != 1">

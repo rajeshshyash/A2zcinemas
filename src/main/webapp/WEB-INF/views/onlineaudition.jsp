@@ -118,10 +118,9 @@
 												</button>
 											</span> &nbsp;&nbsp;
 											<button type="submit" class="btn btn-success mt-lg"
-												ng-click=sessionmenuId( '0') title="Logout">
-												<a href="${pageContext.request.contextPath}/logout">
-													Logout</a>
-											</button>
+										ng-click="logout()" title="Logout">
+									      <a href="javascript:()"> Logout</a> 
+									    </button>
 
 										</div>
 										<div ng-if="aboutus != 1">
@@ -415,25 +414,23 @@
 								<table class="table table-hover">
 									<thead>
 										<tr>
-											<th style="width:15%">User Type</th>
+											<th style="width:15%">Profession</th>
 											<th style="width:15%">Name</th>
 											<th style="width:20%">City(State)</th>
 											<th style="width:15%">Language</th>
-											<th style="width:20%">Experiences</th>
-											<th style="width:20%">Details</th>
+											<th style="width:20%">Past Experiences</th>
+											<th style="width:20%">Film Industry</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr ng-repeat="u in ctrl.users"
 											ng-click="redirectpage(u.user_id)">
 											<td><span ng-bind="u.profession"></span></td>
-											<td><span ng-bind="u.first_name +' ' + u.last_name"></span></td>
+											<td><a href="${pageContext.request.contextPath}/useronedetalis"><span ng-bind="u.first_name +' ' + u.last_name"></span></a></td>
 											<td><span ng-bind="u.pm_district + ' ' +'(' +u.pm_state +')'"></span></td>
 											<td><span ng-bind="u.language"></span></td>
-											<td><span ng-bind="u.previous_work_indusry"></span>, <span
-												ng-bind="u.name_worked_with_director"></span></td>
-											<td><a
-												href="${pageContext.request.contextPath}/useronedetalis">details</a></td>
+											<td><span ng-bind="u.previous_work_indusry"></span>
+											<td><span ng-bind="u.film_industry_intrested"></span>
 										</tr>
 									</tbody>
 								</table>
