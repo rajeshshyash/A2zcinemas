@@ -167,7 +167,7 @@
 						executed through mail-order subscriptions, benefit events, and
 						other methods. Crowd funding is a form of alternative finance,
 						which has emerged outside of the traditional financial system.</p>
-					</br>
+				
 
 					<h5>For any query Mail us at a2zcinemaworld@gmail.com.</h5>
 				</div>

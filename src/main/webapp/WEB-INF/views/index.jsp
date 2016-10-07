@@ -209,12 +209,13 @@
 										<li><a class="ns-img" href="static/mainfiles/img/p2.jpg"></a></li>
 										<li><a class="ns-img" href="static/mainfiles/img/p3.jpg"></a></li>
 										<li><a class="ns-img" href="static/mainfiles/img/p4.jpg"></a></li>
-										<li><a class="ns-img" href="static/mainfiles/img/5.jpg"></a></li>
-										<li><a class="ns-img" href="static/mainfiles/img/6.jpg"></a></li>
-										<li><a class="ns-img" href="static/mainfiles/img/7.jpg"></a></li>
-										<li><a class="ns-img" href="static/mainfiles/img/8.jpg"></a></li>
-										<li><a class="ns-img" href="static/mainfiles/img/9.jpg"></a></li>
-										<li><a class="ns-img" href="static/mainfiles/img/10.jpg"></a></li>
+										<li><a class="ns-img" href="static/mainfiles/img/pdabaang3.jpg"></a></li>
+										<li><a class="ns-img" href="static/mainfiles/img/pJessi.jpg"></a></li>
+										<li><a class="ns-img" href="static/mainfiles/img/pJusticeLeague.jpg"></a></li>
+										<li><a class="ns-img" href="static/mainfiles/img/pneerdose.jpg"></a></li>
+										<li><a class="ns-img" href="static/mainfiles/img/premaGeema.jpg"></a></li>
+										<li><a class="ns-img" href="static/mainfiles/img/ptelebachkolli.jpg"></a></li>
+										<li><a class="ns-img" href="static/mainfiles/img/ptttmovie5thoct.jpg"></a></li>
 										<li>
 											<div class="video">
 												<iframe src="https://www.youtube.com/embed/S0kLxoV20aI"
@@ -239,26 +240,6 @@
 													height="100%" width="100%" frameborder="0"></iframe>
 											</div>
 										</li>
-										<!--  <li>
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/AL2TShb6fFs"  height="100%" width="100%" frameborder="0" ></iframe>
-                    </div>
-                    </li>
-					<li>
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/6L6XqWoS8tw" height="100%" width="100%" frameborder="0" ></iframe>
-                    </div>
-                    </li>
-					<li>
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/VYDu2V6HpkU" height="100%" width="100%" frameborder="0" ></iframe>
-                    </div>
-                   </li>
-                    <li>
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/DRrpidtXObM"  height="100%" width="100%" frameborder="0" ></iframe>
-                    </div>
-                    </li> -->
 									</ul>
 									<div class="fs-icon" title="Expand/Close"></div>
 								</div>
@@ -309,33 +290,24 @@
 									Movies/Posters</h4>
 								<div class="inner">
 									<ul>
-										<li><a class="thumb" href="static/mainfiles/img/p1.jpg"
-											title="Bahubali 2 commingsoon.."></a></li>
-										<li><a class="thumb" href="static/mainfiles/img/p2.jpg"
-											title="Tamil movie commingsoon.."></a></li>
-										<li><a class="thumb" href="static/mainfiles/img/p3.jpg"
-											title="Telgu movie commingsoon.."></a></li>
-										<li><a class="thumb" href="static/mainfiles/img/p4.jpg"
-											title="movien poster commingsoon.."></a></li>
-										<li><a class="thumb" href="static/mainfiles/img/5.jpg"
-											title="Tamil movie commingsoon.."></a></li>
-										<li><a class="thumb" href="static/mainfiles/img/6.jpg"
-											title="Tamil movie commingsoon.."> </a></li>
-										<li><a class="thumb" href="static/mainfiles/img/7.jpg"></a>
-										</li>
-										<li><a class="thumb" href="static/mainfiles/img/8.jpg"></a>
-										</li>
-										<li><a class="thumb" href="static/mainfiles/img/9.jpg"></a>
-										</li>
-										<li><a class="thumb" href="static/mainfiles/img/10.jpg"></a>
-										</li>
+										<li><a class="thumb" href="static/mainfiles/img/p1.jpg" title="Bahubali 2 commingsoon.."></a></li>
+										<li><a class="thumb" href="static/mainfiles/img/p2.jpg" title="Singham 3 Tamil movie commingsoon.."></a></li>
+										<li><a class="thumb" href="static/mainfiles/img/p3.jpg" title="Viraat Telgu movie commingsoon.."></a></li>
+										<li><a class="thumb" href="static/mainfiles/img/p4.jpg" title="Sairat movie commingsoon.."></a></li>
+										<li><a class="thumb" href="static/mainfiles/img/pdabaang3.jpg"  title="Dabangg 3 movie commingsoon.."></a></li>
+										<li><a class="thumb" href="static/mainfiles/img/pJessi.jpg" title="Tamil movie commingsoon.."> </a></li>
+										<li><a class="thumb" href="static/mainfiles/img/pJusticeLeague.jpg" title="JusticeLeague  commingsoon..">></a></li>
+										<li><a class="thumb" href="static/mainfiles/img/pneerdose.jpg" title="Tamil movie commingsoon..">></a></li>
+										<li><a class="thumb" href="static/mainfiles/img/premaGeema.jpg" title="Tamil movie commingsoon..">></a></li>
+										<li><a class="thumb" href="static/mainfiles/img/ptelebachkolli.jpg" title="Tamil movie commingsoon..">></a></li>
+										<li><a class="thumb" href="static/mainfiles/img/ptttmovie5thoct.jpg" title="Tamil movie commingsoon..">></a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-12">
 							<div id="ninja-slider" class="panel panel-default">
-								<h4 class="text-muted text-thin  " margine="0px 20px 0px 0px">Latest
+								<h4 class="text-muted text-thin  " margine="0px 20px 0px 0px">&nbsp;&nbsp;&nbsp;&nbsp; Latest
 									Movies/Trailer</h4>
 								<div class="slider-inner">
 									<div id="thumbs">

@@ -28,7 +28,7 @@
 <script
 	src="<c:url value='/static/css/useroneslider/thumbnail-slider.js' />"></script>
 <link rel="stylesheet" type="text/css"
-	href="static/css/slider/thumbs.css" />
+	href="static/css/useroneslider/thumbs.css" />
 <script type="text/javascript" src="static/mainfiles/js/angular.js"></script>
 <script type="text/javascript" src="static/mainfiles/js/ngStorage.js"></script>
 <script src="<c:url value='/static/js/app.js' />"></script>
@@ -161,11 +161,7 @@
 										Details</h4>
 									<fieldset>
 										<div class="form-group has-feedback">
-											<label for="" class="text-muted col-lg-4"> Name</label> <label
-												class="text-thin col-lg-3"><span
-												ng-bind="u.first_name " /></label> <label class="text-thin">
-												<span ng-bind="u.last_name" />
-											</label>
+											<label for="" class="text-muted col-lg-4"> Name</label> <label class="text-thin col-lg-4" ng-bind-template="{{u.first_name}} {{u.last_name}}"></label>
 										</div>
 										<div class="form-group has-feedback">
 											<label for="" class="text-muted col-lg-4">Gender</label> <label
@@ -289,7 +285,7 @@
 
 											<div class="form-group has-feedback">
 												<label for="" class="text-muted col-lg-6">Why do
-													you want to work in Film Industry</label> <label class="text-thin"><span
+													you want to work in Film Industry</label> <label class="text-thin" style="height:50px"><span
 													ng-bind="u.reason" /> </label>
 											</div>
 										</fieldset>
@@ -297,137 +293,7 @@
 								</div>
 
 							</div>
-							<!-- <div class="col-lg-7"   >
-		
-			<div class="panel panel-default"> 
-			<h4 class="text-muted text-thin text-center">Personal Details</h4>
-                  <fieldset>
-					     <div class="form-group has-feedback">
-							<label for="" class="text-muted col-lg-4" > Name</label> 
-							<label> Manoj kumar</label>
-						</div>						
-						<div class="form-group has-feedback">
-							<label for="" class="text-muted col-lg-4" >Gender</label> 
-							<label>Male</label>
-						</div>              		
-						<div class="form-group has-feedback">
-							<label for="" class="text-muted col-lg-4" >Age</label> 
-							<label>30  Year old</label>
-						</div>
-						 <div class="form-group has-feedback">
-							<label for="" class="text-muted col-lg-4" > Email</label> 
-							<label> prashantravi92@gmail.com</label>
-						</div>
-						<div class="form-group has-feedback">
-							<label for="" class="text-muted col-lg-4" >Language</label> 
-							<label> Hindi, English, Marathi </label>
-						</div>	
-                        <div>						
-						
-							<label for="" class="text-muted col-lg-3" >City</label> 
-							<label class= "col-lg-3">Bangalore</label>
-
-							<label for="" class="text-muted col-lg-3" >Country</label> 
-							<label class= "col-lg-3">India</label>
-					                  		
-						</div>
-						</fieldset>
-			</div>  
-			
-			
-			   <div class="panel panel-default">
-                 <h4 class="text-muted text-thin text-center">Physical Details</h4>
-			     <form id="userPhyDetailsForm" Class="form-horizontal" modelAttribute="userPhyDetails" method="post" action="saveUserPhyDetailsInfo">
-                    <fieldset>
-
-						<div >
-							<label for="" class="text-muted col-lg-3 ">Complexion</label> 
-						    <label class= "col-lg-3">Normal</label>
 							
-							<label for="" class="text-muted col-lg-3" >SkinQuality</label> 
-							<label class= "col-lg-3">Dry Skin</label>
-						</div>
-						
-						<div >
-							<label for="" class="text-muted col-lg-3 ">Weight</label> 
-							<label class= "col-lg-3"> 55 kg</label>
-						   
-						   <label for="" class="text-muted col-lg-3" >Height</label> 
-							<label class= "col-lg-3">6.0ft</label>
-						</div>
-					
-						<div >
-							
-                             <label for="" class="text-muted col-lg-3 ">Eye Color</label> 
-						   <label class= "col-lg-3">Bule</label>							
-                       
-							<label for="" class="text-muted col-lg-3" >Physique</label> 
-						    <label class= "col-lg-3">Mesomorph</label>
-							
-						</div>
-						
-				
-						<div>		
-							<label for="" class="text-muted col-lg-3" >Hair Style</label> 
-						    <label  class= "col-lg-3">Taper Cut</label>
-							
-							<label for="" class="text-muted col-lg-3" >HairLength</label> 
-						     <label class= "col-lg-3">Medium</label>
-						
-						</div>	
-						
-						<div >
-						 <label for="" class="text-muted col-lg-3 ">Hair Color</label> 
-						 <label class= "col-lg-3">Golden</label>
-						 
-						 <label for="" class="text-muted col-lg-3 ">Facial Hair</label> 
-						 <label class= "col-lg-3">Ducktail</label> 
-                         </div>
-				    </fieldset>
-                </form>
-			   </div>
-			   
-			   <div class="panel panel-default">
-                 <h4 class="text-muted text-thin text-center">Work Experience Details</h4>
-	                  <form id="userPhyExpForm" cssClass="form-horizontal" modelAttribute="userExpDetails" method="post" action="saveUserExpDetailsInfo">
-	                 <fieldset>
-					        <div class="form-group has-feedback">
-							    <label for="" class="text-muted col-lg-6" >The Film Industry Worked in previously</label> 
-							    <label> Gujarathi, Marathi</label>
-							</div>
-							
-							<div class="form-group has-feedback">
-							    <label for="" class="text-muted col-lg-6" >Name the Director you worked with</label> 
-							    <label>Prabhu deva, Subhash Gahai</label>
-							</div>
-							
-							<div class="form-group has-feedback">
-							    <label for="" class="text-muted col-lg-6" >Name the Films worked in</label> 
-							   <label> ABCD, Dhoom</label>
-							</div>
-							
-							<div class="form-group has-feedback">
-							    <label for="" class="text-muted col-lg-6" >Name the Production House you worked for</label> 
-							    <label> Yes Rah Production, Dharama Production</label>
-							</div>
-					    </fieldset>
-					    
-					    <fieldset>
-							<div class="form-group has-feedback">
-							    <label for="" class="text-muted col-lg-6" >Film Industry Intested in now</label> 
-							    <label> Hollywood, BollyWood  </label>
-							</div>
-							
-							<div class="form-group has-feedback">
-							    <label for="" class="text-muted col-lg-6" >Why do you want to work in Film Industry</label> 
-							     <label>  I want to become a good Actor  </label>
-							</div>
-							
-					    </fieldset>
-	                  </form>
-	                </div>
-			   
-           </div> -->
 							<div class="col-lg-6">
 								<div class="panel panel-default">
 									<div id="ninja-slider">
@@ -472,30 +338,6 @@
 															height="100%" width="100%" frameborder="0"></iframe>
 													</div>
 												</li>
-												<!-- <li>
-                    <div class="video" ng-repeat="video1 in userone.users">
-                    <video id="currVideo" autoplay="none" preload="none" controls="" tabindex="0">
-		             <source type="video/mp4" ng-src="{{video1.vid_1}}"></source>
-	                 </video>
-                    </div>
-                      http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4
-                   </li>
-                    <li>
-                    <div class="video" >
-                       <video controls style="width:100%"> 
-                         <iframe src="https://www.youtube.com/embed/Bp119VFEjHE?enablejsapi=1&start=0&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1"  height="100%" width="100%" frameborder="0" ></iframe>          
-                       </video> 
-                     <iframe src="https://www.youtube.com/embed/Bp119VFEjHE?enablejsapi=1&start=0&rel=0&showinfo=0&iv_load_policy=3&modestbranding=1"  height="100%" width="100%" frameborder="0" ></iframe> 
-                    </div>
-                    </li>
-					<li>
-                    <div class="video">
-                       <video controls="controls" preload="auto" webkit-playsinline="webkit-playsinline" class="videoPlayer">
-                       <source src="https://player.vimeo.com/video/136205074?title=0&portrait=0&byline=0" type="video/mp4"/>
-                       </video>
-                       <iframe src="https://player.vimeo.com/video/136205074?title=0&portrait=0&byline=0" height="100%" width="100%" frameborder="0" controls></iframe> 
-                    </div>
-                    </li> -->
 											</ul>
 											<div class="fs-icon" title="Expand/Close"></div>
 										</div>
@@ -536,13 +378,9 @@
 									<div id="ninja-slider">
 										<div class="slider-inner">
 											<div id="thumbs">
-												<span onclick="nslider.displaySlide(10)"><img
-													src="static/mainfiles/img/play1.jpg" /></span> <span
-													onclick="nslider.displaySlide(11)"><img
-													src="static/mainfiles/img/play2.jpg" /></span> <span
-													onclick="nslider.displaySlide(12)"><img
-													src="static/mainfiles/img/play3.jpg" /></span>
-												<!--  <span onclick="nslider.playVideo(14)"><img src="img/4.jpg" /><span class="playvideo">AUTO</span></span> -->
+											<span onclick="nslider.displaySlide(10)"><img src="static/mainfiles/img/play1.jpg" /><h5>video 1</h5></span>
+                                               <span onclick="nslider.displaySlide(11)"><img src="static/mainfiles/img/play2.jpg" /><h5>video 2</h5></span>
+                                               <span onclick="nslider.displaySlide(12)"><img src="static/mainfiles/img/play1.jpg" /><h5>video 3</h5></span></div>
 											</div>
 										</div>
 									</div>

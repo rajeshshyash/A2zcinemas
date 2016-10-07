@@ -1,8 +1,8 @@
 /* Visit http://www.menucool.com/responsive-slider for instructions */
 
 #ninja-slider {
-    width:100%;
-    background:#333;
+    width:95%;
+    background:#fff;
     padding: 0px;
     margin:0 auto;
     overflow:hidden;
@@ -297,7 +297,7 @@
 /* #ninja-slider-pager { display:none;}*/
 #ninja-slider-pager
 {
-    padding-top:30px; /* set the distance away from the slider */
+    padding:15px 0px 15px 0px; /* set the distance away from the slider */
     margin:0 auto; /* center align */
     text-align:center;
     display:table;

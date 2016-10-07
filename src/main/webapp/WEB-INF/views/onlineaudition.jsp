@@ -179,7 +179,7 @@
 								<table class="table table-hover">
 									<tbody>
 										<tr>
-											<td><a href="http://www.ishnira.com/">new audtion
+											<td><a href="http://www.ishnira.com/" target="_blank">new audtion
 													in bangalore</a></td>
 										</tr>
 										<tr>
@@ -360,46 +360,39 @@
 						<div class="col-lg-2">
 							<div class="panel panel-default">
 								<h4 class="text-muted text-thin text-center">Member List</h4>
-								<fieldset>
-									<div class="form-group panel panel-default">
-										<img src="static/mainfiles/img/5.jpg"
-											style="height: 100px; width: 100px; margin: 20px 30px 0px 40px"
-											alt="" />
-										<h6 class="text-center">Audition name 1</h6>
-									</div>
-								</fieldset>
-								<fieldset>
-									<div class="form-group panel panel-default">
-										<img src="static/mainfiles/img/6.jpg"
-											style="height: 100px; width: 100px; margin: 0px 30px 0px 40px"
-											alt="" />
-										<h6 class="text-center">Audition name 2</h6>
-									</div>
-								</fieldset>
-								<fieldset>
-									<div class="form-group panel panel-default">
-										<img src="static/mainfiles/img/7.jpg"
-											style="height: 100px; width: 100px; margin: 0px 30px 0px 40px"
-											alt="" />
-										<h6 class="text-center">Audition name 2</h6>
-									</div>
-								</fieldset>
-								<fieldset>
-									<div class="form-group panel panel-default">
-										<img src="static/mainfiles/img/8.jpg"
-											style="height: 100px; width: 100px; margin: 0px 30px 0px 40px"
-											alt="" />
-										<h6 class="text-center">Audition name 2</h6>
-									</div>
-								</fieldset>
-								<fieldset>
-									<div class="form-group panel panel-default">
-										<img src="static/mainfiles/img/3.jpg"
-											style="height: 100px; width: 100px; margin: 0px 30px 0px 40px"
-											alt="" />
-										<h6 class="text-center">Audition name 2</h6>
-									</div>
-								</fieldset>
+								<div class="form-group panel panel-default">
+							<img src="static/mainfiles/img/mSanviSundar.jpg"
+								style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
+								alt="" />
+							<h6 class="text-center">Sanvi Sundar(Child Actress)</h6>
+						</div>
+
+						<div class="form-group panel panel-default">
+							<img src="static/mainfiles/img/mDharasingh.jpg"
+								style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
+								alt="" />
+							<h6 class="text-center">Dara Singh(Director)</h6>
+						</div>
+
+						<div class="form-group panel panel-default">
+							<img src="static/mainfiles/img/mHarsha.jpg"
+								style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
+								alt="" />
+							<h6 class="text-center">Harsha Putta(Actor)</h6>
+						</div>
+
+						<div class="form-group panel panel-default">
+							<img src="static/mainfiles/img/mValli.jpg"
+								style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
+								alt="" />
+							<h6 class="text-center">Valli(Actress)</h6>
+						</div>
+						<div class="form-group panel panel-default">
+							<img src="static/mainfiles/img/mSuhailKhan.jpg"
+								style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
+								alt="" />
+							<h6 class="text-center">Suhail Khan(Actor)</h6>
+						</div>
 							</div>
 						</div>
 

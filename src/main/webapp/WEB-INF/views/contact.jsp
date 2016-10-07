@@ -162,65 +162,53 @@ alert(data1);
 		</div>
 		<section>
 			<div class="col-lg-12 panel panel-default">
-				<h2 class="text-center">
-					Contact Us
-					<h2>
-			</div>
-			<div class="col-lg-12 panel panel-default">
-				<h2>Contact Info.</h2>
-				<strong>Email:</strong>
-				<ul>
-					<li><p>a2zcinemaworld@gmail.com</p></li>
-					<li><p>contact@a2zcinemaworld.com</p></li>
-					<li><p>info@a2zcinemaworld.com</p></li>
-				</ul>
-				<strong>Phone:</strong>
-				<ul>
-					<li><p>Sunder:- 9900085069</p></li>
-					<li><p>Yogesh:- 7406454062</p></li>
-				</ul>
-				<p>
-					<strong>Website:</strong><a rel="nofollow"
-						href="http://www.ishnira.com/"> www.a2zcinemaworld.com</a><br />
-					<strong> Address:</strong> #121 , 6th cross Basement -office Room
-					no.1, Hotel Chetan international Opp : Ramu Films GandhiNagar
-					Bangalore Karnataka-560009
-				</p>
-			</div>
-			<div class="col-lg-9 panel panel-default">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.99286738307882!2d77.57601970566577!3d12.979150386913464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1611b531fc15%3A0xa479187b2970e54e!2s121%2C+6th+Cross+Rd%2C+Gandhi+Nagar%2C+Bengaluru%2C+Karnataka+560009!5e0!3m2!1sen!2sin!4v1475668039781"
-					width="100%" height="403px" frameborder="0" style="border: 0"
-					allowfullscreen></iframe>
+		<h2 class="text-center">Contact Us<h2> 
+		</div>
+		<div class="col-lg-12 panel panel-default">
+		<div class="col-lg-9 panel panel-default ">
+		<h2>Contact Info.</h2>       
+			<strong>Email:</strong>
+			<ul>
+			<li><p>a2zcinemaworld@gmail.com</p></li>
+			<li><p>contact@a2zcinemaworld.com</p></li>
+			<li><p>info@a2zcinemaworld.com</p></li>
+			</ul>					
+			<strong>Phone:</strong>
+			<ul>
+			<li><p> Sunder:- 9900085069</p></li>
+			<li><p> Yogesh:- 7406454062 </p> </li>		
+			</ul>
+			<p>
+			<strong>Address:</strong> #121 , 6th cross Basement -office Room no.1, Hotel Chetan international Opposite : Ramu Films</br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  GandhiNagar Bangalore Karnataka-560009</p>		
+			<strong>Website:</strong><a rel="nofollow" href="http://www.ishnira.com/">  www.a2zcinemaworld.com</a><br /><br /><br /><br />
 			</div>
 			<div class="col-lg-3 panel panel-default ">
-				<h4 class=" text-center">Send Us A Message</h4>
-				<form id="contact_form" action="#" method="POST">
-					<div class=" col-md-12 col-sm-12">
-						<input type="text" class="blog-search-field" id="name" name="name"
-							placeholder="Your name..." value="">
-					</div>
-					<div class="col-md-12 col-sm-12">
-						<input type="text" class="blog-search-field" id="email"
-							name="email" placeholder="Your email..." value="">
-					</div>
-					<div class="col-md-12 col-sm-12">
-						<input type="text" class="subject" id="subject" name="subject"
-							placeholder="Subject..." value="">
-					</div>
-					<div class="col-md-12 col-sm-12">
-						<textarea id="message" class="input" id="message" name="message"
-							placeholder="Message..."></textarea>
-					</div>
-					<div class="submit-coment col-md-12 col-xs-12">
-						<div class="text-center">
-
-							<button type="submit" onclick='sendMail()'
-								class="btn btn-success mt-lg" id="submit">Send Now</button>
-						</div>
-					</div>
-				</form>
-			</div>
+		<h4 class=" text-center">Send Us A Message</h4>
+		<form id="contact_form" action="#" method="POST" >
+								<div class=" col-md-12 col-sm-12">
+									<input type="text" class="blog-search-field" id="name" name="name" placeholder="Your name..." value="">
+								</div>
+								<div class="col-md-12 col-sm-12">
+									<input type="text" class="blog-search-field" id="email" name="email" placeholder="Your email..." value="">
+								</div>
+								<div class="col-md-12 col-sm-12">
+									<input type="text" class="subject" id="subject" name="subject" placeholder="Subject..." value="">
+								</div>
+								<div class="col-md-12 col-sm-12">
+									<textarea id="message" class="input" id="message" name="message" placeholder="Message..."></textarea>
+								</div>
+								<div class="submit-coment col-md-12 col-xs-12">
+								<div class="text-center">
+                       
+                                    <button type="submit" onclick='sendMail()' class="btn btn-success mt-lg" id="submit"  >Send Now</button></br>
+                                </div>
+								</div>
+		</form>		
+		</div>
+		</div>
+		<div class="col-lg-12 panel panel-default"> 
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242.99286738307882!2d77.57601970566577!3d12.979150386913464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1611b531fc15%3A0xa479187b2970e54e!2s121%2C+6th+Cross+Rd%2C+Gandhi+Nagar%2C+Bengaluru%2C+Karnataka+560009!5e0!3m2!1sen!2sin!4v1475668039781" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
 		</section>
 		<nav class="sidebar-menu slide-from-left">
 			<div class="nano">
