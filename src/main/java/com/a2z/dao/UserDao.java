@@ -3,6 +3,7 @@ package com.a2z.dao;
 import java.util.List;
 
 import com.a2z.model.User;
+import com.a2z.to.UserTo;
 
 public interface UserDao {
 	User findUserByUserName(String userName);
@@ -11,4 +12,5 @@ public interface UserDao {
     public List<?> findAllUsers(); //for audition and single user details
 	public List<?> getUserDetailsProfile(long userId);
 	User findUserByUserId(long userId);
+	
 }

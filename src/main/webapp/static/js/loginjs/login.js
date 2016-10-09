@@ -36,18 +36,6 @@
 		 });
 	});
 	
-	/*$('#proForm').bind('submit', function() {
-		$("#registerSocialModal").modal("hide");
-		register_complete();
-		$("#registreModal").modal("show");
-	});*/
-	
-	/*$(document).on("click","#regEmail",function(){
-		$("#registerSocialModal").modal("hide");
-		register_complete();
-		$("#registreModal").modal("show");
-	});*/
-	
 	  $(document).ready(function(){
 	    $("select").change(function(){
 	        $(this).find("option:selected").each(function(){
@@ -85,7 +73,7 @@
 		$("input[name='regAgency']").val();
 	
 		var proffession = $("#profession").val();
-		alert("proffession:"+proffession);
+		//alert("proffession:"+proffession);
 		$("input[name='profession']").val(
 		$("select[name='profession']").val());
 	

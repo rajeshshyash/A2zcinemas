@@ -23,7 +23,7 @@ public class UserDaoImpl extends AbstractDao<Integer, User> implements UserDao {
 	@Override
 	public Long findUserIdByUserName(String userName) {
 		return (Long) this.getSession()
-				.createQuery("SELECT u.user_id FROM users u WHERE u.username=?")
+				.createQuery("SELECT u.user_id FROM user u WHERE u.username=?")
 				.setParameter(0,userName).uniqueResult();
 	}
 	
@@ -39,9 +39,9 @@ public class UserDaoImpl extends AbstractDao<Integer, User> implements UserDao {
 		List<?> userdata = null;
 		
 		String query = " SELECT u.user_id,u.profession,u.first_name,u.last_name, "+ 
-				" pd.language,pd1.previous_work_indusry,pd1.film_industry_intrested, "+
+				" pd.language,pd1.previous_work_indusry,pd.age,pd1.film_industry_intrested, "+
 				" a.pm_district,a.pm_state "+
-				" FROM users u "+
+				" FROM user u "+
 				" LEFT OUTER JOIN profile_details pd ON u.user_id = pd.user_id "+
 				" LEFT OUTER JOIN professional_details pd1 ON u.user_id = pd1.user_id "+
 				" LEFT OUTER JOIN address a ON u.user_id = a.user_id ";
@@ -63,7 +63,7 @@ public class UserDaoImpl extends AbstractDao<Integer, User> implements UserDao {
 				" phd.hair_color,phd.eye_color,phd.hair_length,"+
 				" prd.previous_work_indusry,prd.name_worked_with_director,"+
 				" prd.name_worked_film,prd.name_worked_production_house,prd.film_industry_intrested,prd.reason"+
-				" FROM users u"+
+				" FROM user u"+
 				" LEFT OUTER JOIN profile_details pd ON u.user_id = pd.user_id"+
 				" LEFT OUTER JOIN physical_details phd ON u.user_id = phd.user_id"+
 				" LEFT OUTER JOIN professional_details prd ON u.user_id = prd.user_id"+

@@ -114,12 +114,6 @@
 											<a href="${pageContext.request.contextPath}/agencyProfile">Profile</a>
 										</button>
 									</span> &nbsp;&nbsp;
-									
-									
-									  <button type="submit" class="btn btn-success mt-lg"
-											title="Profile">
-											<a href="${pageContext.request.contextPath}/agencyProfile">Logout</a>
-										</button>
 										<button type="submit" class="btn btn-success mt-lg"
 										ng-click="logout()" title="Logout">
 									      <a href="javascript:()"> Logout</a> 
@@ -156,43 +150,25 @@
 								<table class="table table-hover">
 									<tbody>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://www.indiaglitz.com/nikil-kumar-signs-second-film-kannada-news-168691.html" target="_blank">Nikil Kumar signs second film</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
+											<td><a href="http://www.filmykannada.com/news-upendra-first-look-from-dr-modi-is-out--318853.htm" target="_blank">Upendra First Look From Dr Modi Is Out !</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in india</td>
+										<td><a href="http://www.auditionform.in/sur-sangram-season-4-2016-auditions-registration/" target="_blank">Sur Sangram season 4 2016 Auditions Details</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
+											<td><a href="http://karnataka.indiaeveryday.in/news-sudeep-hebbuli-nearing-completion-1481-2735252.htm" target="_blank">Sudeep Hebbuli nearing completion</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://www.filmykannada.com/news-radhika-fires-on-re-marriage-rumors-326774.htm" target="_blank">Radhika Fires On Re-Marriage Rumors</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
+											<td><a href="http://www.auditiondate.in/indian-idol-season-7-2014-registration-venue-online-audition-date/" target="_blank">Indian Idol Season-7 2016 Auditions & Registration Details</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
-										</tr>
-										<tr>
-											<td>new audtion in india</td>
-										</tr>
-										<tr>
-											<td>new audtion in bangalore</td>
-										</tr>
-										<tr>
-											<td>new audtion in bangalore</td>
-										</tr>
-										<tr>
-											<td>new audtion in bangalore</td>
-										</tr>
-										<tr>
-											<td>new audtion in india</td>
-										</tr>
-										<tr>
-											<td>new audtion in bangalore</td>
+											<td><a href="http://www.motachashma.com/auditions/boogie-woogie-kids-championship-auditions.php" target="_blank">boogie-woogie-kids-championship-auditions</a></td>
 										</tr>
 									</tbody>
 								</table>
@@ -253,31 +229,16 @@
 								<table class="table table-hover">
 									<tbody>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://www.auditiondate.in/indian-idol-season-7-2014-registration-venue-online-audition-date/" target="_blank">Indian Idol Season-7 2016 Auditions & Registration Details</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
+										<td><a href="http://www.auditionform.in/sur-sangram-season-4-2016-auditions-registration/" target="_blank">Sur Sangram season 4 2016 Auditions Details</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://www.motachashma.com/auditions/boogie-woogie-kids-championship-auditions.php" target="_blank">boogie-woogie-kids-championship-auditions</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
-										</tr>
-										<tr>
-											<td>new audtion in india</td>
-										</tr>
-										<tr>
-											<td>new audtion in bangalore</td>
-										</tr>
-										<tr>
-											<td>new audtion in bangalore</td>
-										</tr>
-										<tr>
-											<td>new audtion in india</td>
-										</tr>
-										<tr>
-											<td>new audtion in bangalore</td>
+											<td><a href="http://www.auditionform.in/movie-poster-design-contest/" target="_blank">Movie Poster Design Anna: Kisan Baburao Hazare Contest</a></td>
 										</tr>
 									</tbody>
 								</table>
@@ -502,7 +463,7 @@
 							<div class="form-group has-feedback"
 								ng-class="{ 'has-error' : loginform.userName.$invalid && !loginform.userName.$pristine }">
 								<input ng-model="ctrlLogin.ulogin.userName" name="userName"
-									type="text" placeholder="Username or Email" required
+									type="text" placeholder="Username or Email" autocomplete="off" required
 									class="form-control" ng-minlength="3" ng-maxlength="20">
 								<p
 									ng-show="loginform.userName.$touched && loginform.userName.$invalid "
@@ -510,12 +471,13 @@
 								<p ng-show="loginform.userName.$error.minlength"
 									class="help-block">Username is too short minlength 3.</p>
 								<p ng-show="loginform.userName.$error.maxlength"
-									class="help-block">Username is too long maxlength 30.</p>
+									class="help-block">Username is too long maxlength 30.</p	>
 							</div>
+							
 							<div class="form-group has-feedback"
-								ng-class="{ 'has-error' : loginform.userName.$invalid && !loginform.userName.$pristine }">
+								ng-class="{ 'has-error' : loginform.password.$invalid && !loginform.password.$pristine }">
 								<input ng-model="ctrlLogin.ulogin.password" name="password"
-									type="password" placeholder="Password" required
+									type="password" placeholder="Password" autocomplete="off" required
 									class="form-control" ng-minlength="6" ng-maxlength="10">
 								<p
 									ng-show="loginform.password.$touched && loginform.password.$invalid"
@@ -573,10 +535,10 @@
 					</div>
 					<label class="text-muted text-thin ">Register Me As</label>
 					<div class="panel-body">
-
+	<!-- <form name="proForm" id="proForm"> -->
 						<form name="proForm" id="proForm">
 							<div class="form-group has-feedback">
-								<select name="profession" id="profession" class="form-control"
+								<select name="profession" id="profession" ng-model="ctrlUser.userdetails.profession" class="form-control"
 									required title="Please select profession."
 									oninvalid="this.setCustomValidity('Please select your profession.')"
 									oninput="setCustomValidity('')">
@@ -588,7 +550,7 @@
 							</div>
 
 							<div class="form-group has-feedback actor box" required>
-								<select name="actorType" id="actorType" class="form-control"
+								<select name="actorType" id="actorType" ng-model="ctrlUser.userdetails.actorType" ng-init="ctrlUser.userdetails.actorType='LeadActor'"  class="form-control"
 									required>
 									<option value="LeadActor">Lead Actor</option>
 									<option value="LeadActress">Lead Actress</option>
@@ -599,7 +561,7 @@
 							</div>
 
 							<div class="form-group has-feedback backSupport box" required>
-								<select name="backSupportTeam" id="backSupportTeam"
+								<select name="backSupportTeam" id="backSupportTeam" ng-model="ctrlUser.userdetails.backSupportTeam"
 									class="form-control" required>
 									<option value="Director">Director</option>
 									<option value="Producer">Producer</option>
@@ -623,7 +585,7 @@
 								</select>
 							</div>
 							<div class="form-group has-feedback agency box" required>
-								<select name="regAgency" id="regAgency" class="form-control"
+								<select name="regAgency" id="regAgency" ng-model="ctrlUser.userdetails.regAgency" class="form-control"
 									required>
 									<option value="Studios">Studios</option>
 									<option value="VFXGraphics">VFX - Graphics Companies</option>
@@ -776,7 +738,7 @@
 							<div class="clearfix"></div>
 
 							<div class="text-center">
-								<button type="submit" id="btnRegister" class="btnf btn-info">Register</button>
+								<button type="submit" id="btnRegister" ng-click="regi()"class="btnf btn-info">Register</button>
 							</div>
 
 						</form>

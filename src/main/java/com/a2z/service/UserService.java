@@ -6,9 +6,9 @@ import com.a2z.model.User;
 import com.a2z.to.UserTo;
 
 public interface UserService {
-	User findUserByUserName(String userName);
+	public User findUserByUserName(String userName);
 	public Long findUserIdByUserName(String userName);
-	User saveUser(UserTo userTo);
+	public  UserTo saveUser(UserTo userTo);
 	UserTo validateUser(String userName, String password);
 	User autologin(String userName, String password);
 	

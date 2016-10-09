@@ -280,7 +280,7 @@
 							<div class="form-group has-feedback"
 								ng-class="{ 'has-error' : loginform.userName.$invalid && !loginform.userName.$pristine }">
 								<input ng-model="ctrlLogin.ulogin.userName" name="userName"
-									type="text" placeholder="Username or Email" required
+									type="text" placeholder="Username or Email" autocomplete="off" required
 									class="form-control" ng-minlength="3" ng-maxlength="20">
 								<p
 									ng-show="loginform.userName.$touched && loginform.userName.$invalid "
@@ -288,12 +288,13 @@
 								<p ng-show="loginform.userName.$error.minlength"
 									class="help-block">Username is too short minlength 3.</p>
 								<p ng-show="loginform.userName.$error.maxlength"
-									class="help-block">Username is too long maxlength 30.</p>
+									class="help-block">Username is too long maxlength 30.</p	>
 							</div>
+							
 							<div class="form-group has-feedback"
-								ng-class="{ 'has-error' : loginform.userName.$invalid && !loginform.userName.$pristine }">
+								ng-class="{ 'has-error' : loginform.password.$invalid && !loginform.password.$pristine }">
 								<input ng-model="ctrlLogin.ulogin.password" name="password"
-									type="password" placeholder="Password" required
+									type="password" placeholder="Password" autocomplete="off" required
 									class="form-control" ng-minlength="6" ng-maxlength="10">
 								<p
 									ng-show="loginform.password.$touched && loginform.password.$invalid"

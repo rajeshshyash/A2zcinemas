@@ -5,12 +5,12 @@ angular.module('profileApp')
 	var self = this;
     self.userdetails={userId:null,firstName:'',lastName:'', mobile:'', professionCat:'', actorType:'', backSupportTeam:'',
     		regAgency:'', userName:'',email:'',password:'',rePassword:'',signupId:''}
-    self.submit = submit;
     
 	 function userSave(userdetails){
 		 HomeService.userSave(userdetails)
 		     .then(
 	    		 function(response) {
+	    			 
 	    			 console.log("userSave data:",response.data);
 	    			 var uresdata = response.data;
 	    			 
@@ -41,9 +41,18 @@ angular.module('profileApp')
 				 );
 	      }
 
-	    function submit() {
-            //console.log('Saving UserRegisterController New User', self.userdetails);
-            userSave(self.userdetails);
+	 $scope.ctrlUser = {};
+	 $scope.ctrlUser.userdetails = {};
+	 
+	 $scope.regi = function(){
+		 $scope.ctrlUser.userdetails.professionCat = $("#profession").val();
+		 $scope.ctrlUser.userdetails.actorType = $("#actorType").val();
+    	 $scope.ctrlUser.userdetails.backSupportTeam = $("#backSupportTeam").val();
+    	 $scope.ctrlUser.userdetails.regAgency = $("#regAgency").val();
+    	 
+		 console.log($scope.ctrlUser.userdetails);
+		 
+		 userSave(JSON.stringify($scope.ctrlUser.userdetails));
 	    }
 }]);
 

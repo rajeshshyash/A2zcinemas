@@ -4,13 +4,17 @@ package com.a2z.model;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -25,7 +29,7 @@ public class UserProfilePersonalInfo  implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="profile_details_id")
 	private long profileDetailsId;
 	
@@ -61,8 +65,6 @@ public class UserProfilePersonalInfo  implements Serializable {
 	@JoinColumn(name = "user_id")
 	private User user;*/
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "user_id")
 	private User user;
 
 		
@@ -148,7 +150,9 @@ public class UserProfilePersonalInfo  implements Serializable {
 	public void setLanguage(String language) {
 		this.language = language;
 	}
-
+	@Access(AccessType.PROPERTY)
+	@ManyToOne(cascade = CascadeType.ALL ,fetch = FetchType.LAZY)
+	@JoinColumn(name = "user_id", nullable = false)
 	public User getUser() {
 		return user;
 	}

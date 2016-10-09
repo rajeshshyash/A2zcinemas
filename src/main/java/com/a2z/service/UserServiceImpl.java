@@ -10,10 +10,11 @@ import org.springframework.stereotype.Service;
 
 import com.a2z.dao.UserDao;
 import com.a2z.model.User;
+import com.a2z.model.UserProfilePersonalInfo;
 import com.a2z.to.UserTo;
 
 
-@Service("usersService")
+@Service("userService")
 @Transactional
 public class UserServiceImpl implements UserService {
 
@@ -37,7 +38,7 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	@Override
-	public User saveUser(UserTo userTo) {
+	public UserTo saveUser(UserTo userTo) {
         User userm = new User();
  		
 		userm.setFirstName(userTo.getFirstName());
@@ -53,47 +54,52 @@ public class UserServiceImpl implements UserService {
 		byte[] encodedBytes = Base64.encode(bytes );
 		userm.setPassword(new String(encodedBytes));
 		userm.setSignupId(userTo.getSignupId());
-		
+		UserProfilePersonalInfo userProfile = new UserProfilePersonalInfo();
+		userm.getUserProfilePersonalInfo().add(userProfile );
+		userProfile.setUser(userm);
 		userdao.saveUser(userm);
+		User  user = userdao.findUserByUserName(userTo.getUserName());
+		if(user != null){
+			UserTo	usrTo = convertUserToUserTo(user);
+			return usrTo;
+		}else{
+			return  new UserTo();
+		}
 		
-		return userm;
+		
 		
 	}
 
 	@Override
 	public UserTo validateUser(String userName, String password) {
 		User user = userdao.findUserByUserName(userName);
-		//decrypyt it
-		String dbPassword = user.getPassword();
-		byte[] bytes = dbPassword.getBytes();
-		byte[] decodeBytes = Base64.decode(bytes);
-		String decodedPassword = new String(decodeBytes);
-		String message = "Invailed Username or password.";
-		//String username; 
-		//String passw; 
 		String isValid;
-		if(userName.equalsIgnoreCase(user.getUserName()) && password.equalsIgnoreCase(decodedPassword)){
-			isValid = "true";
-			System.out.println("user match");
+		 UserTo userm = new UserTo();
+		if(user !=null){
+			String dbPassword = user.getPassword();
+			byte[] bytes = dbPassword.getBytes();
+			byte[] decodeBytes = Base64.decode(bytes);
+			String decodedPassword = new String(decodeBytes);
+			
+			if(password.equalsIgnoreCase(decodedPassword))
+			{
+				 isValid = "true";
+				 userm = convertUserToUserTo(user);
+				 userm.setIsUserValid(isValid);
+				 
+			}else{
+				isValid = "false";
+				String message = "Invailed password.";
+				userm.setIsUserValid(isValid);
+				 userm.setErrorMessege(message);
+			}
+			
 		}else{
 			isValid = "false";
-			System.out.println("no");
+			String message = "Invailed Username.";
+			userm.setIsUserValid(isValid);
+			userm.setErrorMessege(message);
 		}
-		
-		/*if((userName==null || userName.length()==0 || userName.equals("") ) && userName==null){
-			username = "Username should not be empty.";
-		}else if((password==null || password.length()==0 || password.equals("") ) && password==null){
-			passw = "Password should not be empty.";
-		}else{
-			if(userName.equalsIgnoreCase(user.getUserName())&& password.equalsIgnoreCase(decodedPassword)){
-				isValid = "true";
-				System.out.println("yes");
-			}
-		}*/
-		
-		UserTo userm = convertUserToUserTo(user);
-		userm.setIsUserValid(isValid);
-		userm.setErrorMessege(message);
 		return userm;
 	}
 

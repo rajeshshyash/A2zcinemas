@@ -180,11 +180,11 @@ alert(data1);
 			</ul>
 			<p>
 			<strong>Address:</strong> #121 , 6th cross Basement -office Room no.1, Hotel Chetan international Opposite : Ramu Films</br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  GandhiNagar Bangalore Karnataka-560009</p>		
-			<strong>Website:</strong><a rel="nofollow" href="http://www.ishnira.com/">  www.a2zcinemaworld.com</a><br /><br /><br /><br />
+			<strong>Website:</strong><a rel="nofollow" href="http://www.ishnira.com/" target="_blank">  www.a2zcinemaworld.com</a><br /><br /><br /><br />
 			</div>
 			<div class="col-lg-3 panel panel-default ">
-		<h4 class=" text-center">Send Us A Message</h4>
-		<form id="contact_form" action="#" method="POST" >
+		       <h4 class=" text-center">Send Us A Message</h4>
+		                       <form id="contact_form" action="#" method="POST" >
 								<div class=" col-md-12 col-sm-12">
 									<input type="text" class="blog-search-field" id="name" name="name" placeholder="Your name..." value="">
 								</div>
@@ -324,7 +324,7 @@ alert(data1);
 							<div class="form-group has-feedback"
 								ng-class="{ 'has-error' : loginform.userName.$invalid && !loginform.userName.$pristine }">
 								<input ng-model="ctrlLogin.ulogin.userName" name="userName"
-									type="text" placeholder="Username or Email" required
+									type="text" placeholder="Username or Email" autocomplete="off" required
 									class="form-control" ng-minlength="3" ng-maxlength="20">
 								<p
 									ng-show="loginform.userName.$touched && loginform.userName.$invalid "
@@ -332,12 +332,13 @@ alert(data1);
 								<p ng-show="loginform.userName.$error.minlength"
 									class="help-block">Username is too short minlength 3.</p>
 								<p ng-show="loginform.userName.$error.maxlength"
-									class="help-block">Username is too long maxlength 30.</p>
+									class="help-block">Username is too long maxlength 30.</p	>
 							</div>
+							
 							<div class="form-group has-feedback"
-								ng-class="{ 'has-error' : loginform.userName.$invalid && !loginform.userName.$pristine }">
+								ng-class="{ 'has-error' : loginform.password.$invalid && !loginform.password.$pristine }">
 								<input ng-model="ctrlLogin.ulogin.password" name="password"
-									type="password" placeholder="Password" required
+									type="password" placeholder="Password" autocomplete="off" required
 									class="form-control" ng-minlength="6" ng-maxlength="10">
 								<p
 									ng-show="loginform.password.$touched && loginform.password.$invalid"

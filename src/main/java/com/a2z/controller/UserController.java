@@ -22,10 +22,10 @@ public class UserController {
 	UserService userService;
 
 	@RequestMapping(value = "/userSave/", method = RequestMethod.POST)
-	public User userSave(@RequestBody UserTo user, UriComponentsBuilder ucBuilder) {
-		User users = userService.saveUser(user);
-		users = userService.autologin(user.getUserName(), user.getPassword());
-		return users;
+	public UserTo userSave(@RequestBody UserTo user, UriComponentsBuilder ucBuilder) {
+		UserTo usrTo = userService.saveUser(user);
+		userService.autologin(user.getUserName(), user.getPassword());
+		return usrTo;
 	}
 
 	@RequestMapping(value = "/userGet/", method = RequestMethod.GET)

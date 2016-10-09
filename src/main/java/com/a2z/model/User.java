@@ -1,18 +1,25 @@
 package com.a2z.model;
 
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
 @Entity
-@Table(name = "users", uniqueConstraints = {
+@Table(name = "user", uniqueConstraints = {
 		@UniqueConstraint(columnNames = "email_id"),
 		@UniqueConstraint(columnNames = "username")})
 public class User implements Serializable {
@@ -65,6 +72,8 @@ public class User implements Serializable {
 	
 	/*@OneToOne(cascade = CascadeType.ALL)
 	private UserProfilePersonalInfo userProfilePersonalInfo;*/
+	 //@ElementCollection(targetClass=UserProfilePersonalInfo.class)
+	private Set<UserProfilePersonalInfo> userProfilePersonalInfo = new HashSet<UserProfilePersonalInfo>();
 	
 	public User() {
 	}
@@ -172,14 +181,16 @@ public class User implements Serializable {
 	public void setSignupId(int signupId) {
 		this.signupId = signupId;
 	}
-
-	/*public UserProfilePersonalInfo getUserProfilePersonalInfo() {
+	@Access(AccessType.PROPERTY)
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+	public Set<UserProfilePersonalInfo> getUserProfilePersonalInfo() {
 		return userProfilePersonalInfo;
 	}
 
-	public void setUserProfilePersonalInfo(UserProfilePersonalInfo userProfilePersonalInfo) {
+	public void setUserProfilePersonalInfo(Set<UserProfilePersonalInfo> userProfilePersonalInfo) {
 		this.userProfilePersonalInfo = userProfilePersonalInfo;
-	}*/
+	}
+
 	
 	
 

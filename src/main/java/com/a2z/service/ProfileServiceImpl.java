@@ -47,6 +47,7 @@ public class ProfileServiceImpl implements ProfileService {
 		user.setMobile(userProfilePersonalInfoTo.getMobile());
 		user.setEmail(userProfilePersonalInfoTo.getEmail());
 		uppI.setUser(user);
+		user.getUserProfilePersonalInfo().add(uppI);
 		profileDao.saveUserProfilePersonalInfo(uppI);
 	}
 	

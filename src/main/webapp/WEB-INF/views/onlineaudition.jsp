@@ -118,9 +118,9 @@
 												</button>
 											</span> &nbsp;&nbsp;
 											<button type="submit" class="btn btn-success mt-lg"
-										ng-click="logout()" title="Logout">
-									      <a href="javascript:()"> Logout</a> 
-									    </button>
+												ng-click="logout()" title="Logout">
+												<a href="javascript:()"> Logout</a>
+											</button>
 
 										</div>
 										<div ng-if="aboutus != 1">
@@ -179,34 +179,17 @@
 								<table class="table table-hover">
 									<tbody>
 										<tr>
-											<td><a href="http://www.ishnira.com/" target="_blank">new audtion
-													in bangalore</a></td>
+											<td><a href="http://www.auditiondate.in/indian-idol-season-7-2014-registration-venue-online-audition-date/" target="_blank">Indian Idol Season-7 2016 Auditions & Registration Details</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
+										<td><a href="http://www.auditionform.in/sur-sangram-season-4-2016-auditions-registration/" target="_blank">Sur Sangram season 4 2016 Auditions Details</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://www.motachashma.com/auditions/boogie-woogie-kids-championship-auditions.php" target="_blank">boogie-woogie-kids-championship-auditions</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
+											<td><a href="http://www.auditionform.in/movie-poster-design-contest/" target="_blank">Movie Poster Design Anna: Kisan Baburao Hazare Contest</a></td>
 										</tr>
-										<tr>
-											<td>new audtion in india</td>
-										</tr>
-										<tr>
-											<td>new audtion in bangalore</td>
-										</tr>
-										<tr>
-											<td>new audtion in india</td>
-										</tr>
-										<tr>
-											<td>new audtion in bangalore</td>
-										</tr>
-										<tr>
-											<td>new audtion in india</td>
-										</tr>
-
 									</tbody>
 								</table>
 
@@ -217,33 +200,34 @@
 								<table class="table table-hover">
 									<tbody>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://www.filmibeat.com/kannada/news/2016/puneeth-rajkumar-signs-pavan-wadeyars-next-243764.html" target="_blank">Puneeth Rajkumar Signs Pavan Wadeyar's Next!</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
+											<td><a href="http://timesofindia.indiatimes.com/entertainment/kannada/movies/news/A-different-kind-of-Ramayana/articleshow/54719538.cms" target="_blank">Prakash Raj unfolds a different kind of Ramayana</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://www.filmykannada.com/news-upendra-first-look-from-dr-modi-is-out--318853.htm" target="_blank">Upendra First Look From Dr Modi Is Out !</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
+											<td><a href="http://www.indiaglitz.com/nikil-kumar-signs-second-film-kannada-news-168691.html" target="_blank">Nikil Kumar signs second film</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://www.filmibeat.com/kannada/movies/jaguar/fan-photos-50825.html" target="_blank">Tamanna's Latest Photos From Jaguar</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in bangalore</td>
+											<td><a href="http://www.filmykannada.com/news-radhika-fires-on-re-marriage-rumors-326774.htm" target="_blank">Radhika Fires On Re-Marriage Rumors</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://karnataka.indiaeveryday.in/news-sudeep-hebbuli-nearing-completion-1481-2735252.htm" target="_blank">Sudeep Hebbuli nearing completion</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://www.filmibeat.com/bollywood/news/2016/ms-dhoni-lives-and-shares-his-untold-story-with-revital-h-consumers-243220.html" target="_blank">M.S Dhoni Shares & Lives His Untold Story With Revital H Consumers !</a></td>
 										</tr>
 										<tr>
-											<td>new audtion in india</td>
+											<td><a href="http://www.filmibeat.com/kannada/news/2016/read-what-sudeep-has-to-say-about-bigg-boss-kannada-season-4-243502.html" target="_blank">Read What Sudeep Has To Say About Bigg Boss Kannada Season 4</a></td>
 										</tr>
-
+										<tr>
+											<td><a href="http://www.msn.com/en-in/entertainment/bollywood/chinkara-case-salman-khan-files-rs100-cr-defamation-suit-against-tv-channel/ar-BBx5Nm1?srcref=rss" target="_blank">Salman files Rs 100 cr defamation suit against TV channel</a></td>
 										</tr>
 									</tbody>
 								</table>
@@ -255,98 +239,40 @@
 
 								<div id="slider-innervid">
 									<div class="innervid panel panel-default ">
-										<ul>
-											<li>
+										<ul ng-controller="AuditionController as ctrl">
+											<li ng-repeat="u in ctrl.users">
 												<div class="col-lg-8" style="margin-top: 40px;">
 													<fieldset>
 														<div class="form-group has-feedback">
 															<label class="text-muted col-lg-4"> Name:</label> <label
-																class="text-thin col-lg-6">Vijay kumar</label>
+																class="text-thin col-lg-6"><span
+																	ng-bind="u.first_name +' ' + u.last_name"></span></label>
 														</div>
 														<div class="form-group has-feedback">
 															<label class="text-muted col-lg-4">Profession:</label> <label
-																class="text-thin col-lg-6">Actor Team</label>
+																class="text-thin col-lg-6"><span
+																ng-bind="u.profession"></span></label>
 														</div>
 														<div class="form-group has-feedback">
 															<label class="text-muted col-lg-4">Hometown:</label> <label
-																class="text-thin col-lg-5">Delhi</label>
+																class="text-thin col-lg-5"><span
+																ng-bind="u.pm_district + ' ' +'(' +u.pm_state +')'"></span></label>
 														</div>
 														<div class="form-group has-feedback">
 															<label class="text-muted col-lg-4">Age:</label> <label
-																class="text-thin col-lg-6">24 Year old</label>
+																class="text-thin col-lg-6"><span ng-bind="u.age + ' year old'"></span></label>
 														</div>
 														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4">Profession
-																Details:</label> <label class="text-thin col-lg-6">
-																Dancing,Modeling </label>
-														</div>
-													</fieldset>
-												</div>
-												<div class="col-lg-4 " style="margin-top: 40px;">
-													<img src="static/mainfiles/img/3.jpg" height="160"
-														width="160" alt="" />
-												</div>
-											</li>
-											<li>
-												<div class="col-lg-8" style="margin-top: 40px;">
-													<fieldset>
-														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4"> Name:</label> <label
-																class="text-thin col-lg-6">Manoj kumar</label>
-														</div>
-														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4">Profession:</label> <label
-																class="text-thin col-lg-6">Back Support Team</label>
-														</div>
-														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4">Hometown:</label> <label
-																class="text-thin col-lg-6">Bangalore</label>
-														</div>
-														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4">Age:</label> <label
-																class="text-thin col-lg-6">30 Year old</label>
-														</div>
-														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4">Profession
-																Details:</label> <label class="text-thin col-lg-6">
-																Dancing,Singing,Modeling</label>
-														</div>
-													</fieldset>
-												</div>
-												<div class="col-lg-4 " style="margin-top: 40px;">
-													<img src="static/mainfiles/img/4.jpg" height="160"
-														width="160" alt="" />
-												</div>
-											</li>
-											<li>
-												<div class="col-lg-8" style="margin-top: 40px;">
-													<fieldset>
-														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4"> Name:</label> <label
-																class="text-thin col-lg-6"> Yogesh kumar</label>
-														</div>
-														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4">Profession:</label> <label
-																class="text-thin col-lg-6">Agency Team</label>
-														</div>
-														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4">Hometown:</label> <label
-																class="text-thin col-lg-6">Lucknow</label>
-														</div>
-
-														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4">Age:</label> <label
-																class="text-thin col-lg-6">67 Year old</label>
-														</div>
-														<div class="form-group has-feedback">
-															<label class="text-muted col-lg-4">Profession
-																Details:</label> <label class="text-thin col-lg-6">Singing,Modeling
+															<label class="text-muted col-lg-4"> Details:</label> <label
+																class="text-thin col-lg-6"
+																ng-click="redirectpage(u.user_id)"> <a
+																href="${pageContext.request.contextPath}/useronedetalis">Details</a>
 															</label>
 														</div>
 													</fieldset>
 												</div>
 												<div class="col-lg-4 " style="margin-top: 40px;">
-													<img src="static/mainfiles/img/1.jpg" height="160"
+													<img src="static/mainfiles/img/3.jpg" height="160"
 														width="160" alt="" />
 												</div>
 											</li>
@@ -361,38 +287,38 @@
 							<div class="panel panel-default">
 								<h4 class="text-muted text-thin text-center">Member List</h4>
 								<div class="form-group panel panel-default">
-							<img src="static/mainfiles/img/mSanviSundar.jpg"
-								style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
-								alt="" />
-							<h6 class="text-center">Sanvi Sundar(Child Actress)</h6>
-						</div>
+									<img src="static/mainfiles/img/mSanviSundar.jpg"
+										style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
+										alt="" />
+									<h6 class="text-center">Sanvi Sundar(Child Actress)</h6>
+								</div>
 
-						<div class="form-group panel panel-default">
-							<img src="static/mainfiles/img/mDharasingh.jpg"
-								style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
-								alt="" />
-							<h6 class="text-center">Dara Singh(Director)</h6>
-						</div>
+								<div class="form-group panel panel-default">
+									<img src="static/mainfiles/img/mDharasingh.jpg"
+										style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
+										alt="" />
+									<h6 class="text-center">Dara Singh(Director)</h6>
+								</div>
 
-						<div class="form-group panel panel-default">
-							<img src="static/mainfiles/img/mHarsha.jpg"
-								style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
-								alt="" />
-							<h6 class="text-center">Harsha Putta(Actor)</h6>
-						</div>
+								<div class="form-group panel panel-default">
+									<img src="static/mainfiles/img/mHarsha.jpg"
+										style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
+										alt="" />
+									<h6 class="text-center">Harsha Putta(Actor)</h6>
+								</div>
 
-						<div class="form-group panel panel-default">
-							<img src="static/mainfiles/img/mValli.jpg"
-								style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
-								alt="" />
-							<h6 class="text-center">Valli(Actress)</h6>
-						</div>
-						<div class="form-group panel panel-default">
-							<img src="static/mainfiles/img/mSuhailKhan.jpg"
-								style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
-								alt="" />
-							<h6 class="text-center">Suhail Khan(Actor)</h6>
-						</div>
+								<div class="form-group panel panel-default">
+									<img src="static/mainfiles/img/mValli.jpg"
+										style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
+										alt="" />
+									<h6 class="text-center">Valli(Actress)</h6>
+								</div>
+								<div class="form-group panel panel-default">
+									<img src="static/mainfiles/img/mSuhailKhan.jpg"
+										style="height: 100px; width: 120px; margin: 4px 20px 0px 30px"
+										alt="" />
+									<h6 class="text-center">Suhail Khan(Actor)</h6>
+								</div>
 							</div>
 						</div>
 
@@ -407,20 +333,23 @@
 								<table class="table table-hover">
 									<thead>
 										<tr>
-											<th style="width:15%">Profession</th>
-											<th style="width:15%">Name</th>
-											<th style="width:20%">City(State)</th>
-											<th style="width:15%">Language</th>
-											<th style="width:20%">Past Experiences</th>
-											<th style="width:20%">Film Industry</th>
+											<th style="width: 15%">Profession</th>
+											<th style="width: 15%">Name</th>
+											<th style="width: 20%">City(State)</th>
+											<th style="width: 15%">Language</th>
+											<th style="width: 20%">Past Experiences</th>
+											<th style="width: 20%">Film Industry</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr ng-repeat="u in ctrl.users"
 											ng-click="redirectpage(u.user_id)">
 											<td><span ng-bind="u.profession"></span></td>
-											<td><a href="${pageContext.request.contextPath}/useronedetalis"><span ng-bind="u.first_name +' ' + u.last_name"></span></a></td>
-											<td><span ng-bind="u.pm_district + ' ' +'(' +u.pm_state +')'"></span></td>
+											<td><a
+												href="${pageContext.request.contextPath}/useronedetalis"><span
+													ng-bind="u.first_name +' ' + u.last_name"></span></a></td>
+											<td><span
+												ng-bind="u.pm_district + ' ' +'(' +u.pm_state +')'"></span></td>
 											<td><span ng-bind="u.language"></span></td>
 											<td><span ng-bind="u.previous_work_indusry"></span>
 											<td><span ng-bind="u.film_industry_intrested"></span>
@@ -547,8 +476,9 @@
 							<div class="form-group has-feedback"
 								ng-class="{ 'has-error' : loginform.userName.$invalid && !loginform.userName.$pristine }">
 								<input ng-model="ctrlLogin.ulogin.userName" name="userName"
-									type="text" placeholder="Username or Email" required
-									class="form-control" ng-minlength="3" ng-maxlength="20">
+									type="text" placeholder="Username or Email" autocomplete="off"
+									required class="form-control" ng-minlength="3"
+									ng-maxlength="20">
 								<p
 									ng-show="loginform.userName.$touched && loginform.userName.$invalid "
 									class="help-block">Username is required.</p>
@@ -557,11 +487,13 @@
 								<p ng-show="loginform.userName.$error.maxlength"
 									class="help-block">Username is too long maxlength 30.</p>
 							</div>
+
 							<div class="form-group has-feedback"
-								ng-class="{ 'has-error' : loginform.userName.$invalid && !loginform.userName.$pristine }">
+								ng-class="{ 'has-error' : loginform.password.$invalid && !loginform.password.$pristine }">
 								<input ng-model="ctrlLogin.ulogin.password" name="password"
-									type="password" placeholder="Password" required
-									class="form-control" ng-minlength="6" ng-maxlength="10">
+									type="password" placeholder="Password" autocomplete="off"
+									required class="form-control" ng-minlength="6"
+									ng-maxlength="10">
 								<p
 									ng-show="loginform.password.$touched && loginform.password.$invalid"
 									class="help-block">Password is required.</p>
